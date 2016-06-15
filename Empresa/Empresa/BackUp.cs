@@ -59,7 +59,6 @@ namespace Empresa
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);
-            //Solo un comentario de prueba para GitHub
         }
 
         private void btnImportar_Click(object sender, EventArgs e)
