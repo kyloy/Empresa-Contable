@@ -20,6 +20,13 @@ namespace Empresa
                     pDoctores.IdDoctor, pDoctores.Nombre, pDoctores.Apellido_Paterno, pDoctores.Apellido_Materno, pDoctores.Direccion, pDoctores.Colonia, pDoctores.Ciudad, pDoctores.Estado, pDoctores.Pais, pDoctores.Zona, pDoctores.Telefono, pDoctores.Celular, pDoctores.Aseguranza), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -299,6 +306,13 @@ namespace Empresa
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -319,6 +333,13 @@ namespace Empresa
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)

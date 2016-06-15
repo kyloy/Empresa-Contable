@@ -20,6 +20,13 @@ namespace Empresa
                     pEstudios.IdEstudios, pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -157,6 +164,13 @@ namespace Empresa
                  pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo, pEstudios.IdEstudios), conexion);
 
             retorno = comando.ExecuteNonQuery();
+            #region Guardar datos en backup
+            using (System.IO.StreamWriter file =
+       new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+            {
+                file.WriteLine(comando.CommandText);
+            }
+            #endregion
             conexion.Close();
 
             return retorno;
@@ -172,7 +186,13 @@ namespace Empresa
 
             retorno = comando.ExecuteNonQuery();
             conexion.Close();
-
+            #region Guardar datos en backup
+            using (System.IO.StreamWriter file =
+       new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+            {
+                file.WriteLine(comando.CommandText);
+            }
+            #endregion
             return retorno;
 
         }

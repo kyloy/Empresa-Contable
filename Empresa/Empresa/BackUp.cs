@@ -20,7 +20,7 @@ namespace Empresa
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
-            string fileName = "prueba.txt";
+            string fileName = "EmpresaBackup.txt";
             string sourcePath = @"C:\Backup";
             string targetPath;
             switch (comboBox1.Text)
@@ -59,25 +59,52 @@ namespace Empresa
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);
+            MessageBox.Show("BASE DE DATOS GUARDADA");
+            System.IO.File.WriteAllText(@"C:\Backup\EmpresaBackup.txt", "USE empresa;\n\r");
         }
 
         private void btnImportar_Click(object sender, EventArgs e)
         {
-            string Backup = System.IO.File.ReadAllText(@"C:\Backup\prueba.txt");
+            string Backup;
+            switch (comboBox1.Text)
+            {
+                case "D:":
+                    Backup = System.IO.File.ReadAllText(@"D:\Backup\EmpresaBackup.txt");
+                    break;
+                case "E:":
+                    Backup = System.IO.File.ReadAllText(@"E:\Backup\EmpresaBackup.txt");
+                    break;
+                case "F:":
+                   Backup = System.IO.File.ReadAllText(@"F:\Backup\EmpresaBackup.txt");
+                    break;
+                case "G:":
+                   Backup = System.IO.File.ReadAllText(@"G:\Backup\EmpresaBackup.txt");
+                    break;
+                case "H:":
+                    Backup = System.IO.File.ReadAllText(@"H:\Backup\EmpresaBackup.txt");
+                    break;
+                default:
+                    MessageBox.Show("Selecione una opcion correcta");
+                    Backup = System.IO.File.ReadAllText(@"D:\Backup\EmpresaBackup.txt");
+                    break;
+            }            
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
                 MySqlCommand comando = new MySqlCommand(Backup,conexion);
                 retorno = comando.ExecuteNonQuery();
-                conexion.Close();
-                System.IO.File.WriteAllText(@"C:\Backup\prueba.txt", "USE empresa");
+                conexion.Close();                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 conexion.Close();                
             }
+            if (retorno > 0)
+                MessageBox.Show("BASE DE DATOS ACTUALIZADA");
+            else
+                MessageBox.Show("ERROR AL IMPORTAR BASE DE DATOS");
         }
     }
 }

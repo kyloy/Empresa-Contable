@@ -21,6 +21,13 @@ namespace Empresa
                   pOtros.Clave, pOtros.Descripcion), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -85,6 +92,13 @@ namespace Empresa
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -121,6 +135,13 @@ namespace Empresa
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)

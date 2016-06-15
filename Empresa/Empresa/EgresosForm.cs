@@ -22,8 +22,8 @@ namespace Empresa
         {
             dgvEgresos.DataSource = EgresosDAL.LLenar(Titulo);
             this.Text = this.Text + ": " + Titulo;
-            dgvEgresos.Columns[6].Visible = false;
-            dgvEgresos.Columns[7].Visible = false;
+            //dgvEgresos.Columns[6].Visible = false;
+            //dgvEgresos.Columns[7].Visible = false;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace Empresa
         {
             ClassEgresos pEgresos = new ClassEgresos();
 
-            pEgresos.IdEgresos = Convert.ToInt32(dgvEgresos.CurrentRow.Cells[5].Value);
+            pEgresos.IdEgresos = Convert.ToInt32(dgvEgresos.CurrentRow.Cells[6].Value);
             pEgresos.Clave = txtClave.Text.Trim();
             pEgresos.Cheque = txtCheque.Text.Trim();
             pEgresos.Concepto = txtConcepto.Text.Trim();
