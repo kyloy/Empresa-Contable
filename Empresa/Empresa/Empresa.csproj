@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD014E1D-394E-4169-BF88-74E4266635B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Empresa</RootNamespace>
+    <AssemblyName>Empresa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>28</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1E637A9D0D426B665F033B9B09AFF739AB46302C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Empresa_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Raquel\Downloads\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdeudoDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdeudoDoctor.Designer.cs">
+      <DependentUpon>AdeudoDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdeudosDoctor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdeudosDoctor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackUp.Designer.cs">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BdComun.cs" />
+    <Compile Include="buscar_catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscar_catalogo.Designer.cs">
+      <DependentUpon>buscar_catalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatagEgresos.cs" />
+    <Compile Include="CatagEgresosDAL.cs" />
+    <Compile Include="CatagOtrosEgre.cs" />
+    <Compile Include="CatagOtrosEgreDAL.cs" />
+    <Compile Include="Catalogo de Doctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo de Doctores.Designer.cs">
+      <DependentUpon>Catalogo de Doctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo de Egresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo de Egresos.Designer.cs">
+      <DependentUpon>Catalogo de Egresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo Otros Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo Otros Ingresos.Designer.cs">
+      <DependentUpon>Catalogo Otros Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogoDoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogoDoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogo_de_Estudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo_de_Estudios.Designer.cs">
+      <DependentUpon>Catalogo_de_Estudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassEgresos.cs" />
+    <Compile Include="ClassOtrosEgre.cs" />
+    <Compile Include="Concentrado Mensual.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Concentrado Mensual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DiagnosticoConcentrado Mensual.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiagnosticoConcentrado Mensual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="diagnosticoConMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diagnosticoConMensual.Designer.cs">
+      <DependentUpon>diagnosticoConMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctores.cs" />
+    <Compile Include="DoctoresDAL.cs" />
+    <Compile Include="EgresosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgresosForm.Designer.cs">
+      <DependentUpon>EgresosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EgresosDAL.cs" />
+    <Compile Include="empresaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empresaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.cs" />
+    <Compile Include="EmpresaDAL.cs" />
+    <Compile Include="Estudios.cs" />
+    <Compile Include="EstudiosDAL.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpDoctores.Designer.cs">
+      <DependentUpon>ImpDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso_Estudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso_Estudios.Designer.cs">
+      <DependentUpon>Ingreso_Estudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingre_Estudios.cs" />
+    <Compile Include="Ingre_EstudiosDAL.cs" />
+    <Compile Include="MenuEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpresa.Designer.cs">
+      <DependentUpon>MenuEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaEmpresa.Designer.cs">
+      <DependentUpon>NuevaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtrosEgresosDAL.cs" />
+    <Compile Include="OtrosIngreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtrosIngreForm.Designer.cs">
+      <DependentUpon>OtrosIngreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDiario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDiario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte1.Designer.cs">
+      <DependentUpon>Reporte1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte2.Designer.cs">
+      <DependentUpon>Reporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteConMensual.Designer.cs">
+      <DependentUpon>ReporteConMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteDiario.Designer.cs">
+      <DependentUpon>ReporteDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteDireccion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDireccion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteDirecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteDirecciones.Designer.cs">
+      <DependentUpon>ReporteDirecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAdeudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAdeudos.Designer.cs">
+      <DependentUpon>SelectAdeudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectConMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectConMensual.Designer.cs">
+      <DependentUpon>SelectConMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDirecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDirecciones.Designer.cs">
+      <DependentUpon>SelectDirecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectRDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectRDiario.Designer.cs">
+      <DependentUpon>SelectRDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectReporte2.Designer.cs">
+      <DependentUpon>SelectReporte2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdeudoDoctor.resx">
+      <DependentUpon>AdeudoDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdeudosDoctor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdeudosDoctor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackUp.resx">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscar_catalogo.resx">
+      <DependentUpon>buscar_catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo de Doctores.resx">
+      <DependentUpon>Catalogo de Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo de Egresos.resx">
+      <DependentUpon>Catalogo de Egresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo Otros Ingresos.resx">
+      <DependentUpon>Catalogo Otros Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogoDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CatalogoDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo_de_Estudios.resx">
+      <DependentUpon>Catalogo_de_Estudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Concentrado Mensual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Concentrado Mensual.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiagnosticoConcentrado Mensual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DiagnosticoConcentrado Mensual.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diagnosticoConMensual.resx">
+      <DependentUpon>diagnosticoConMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgresosForm.resx">
+      <DependentUpon>EgresosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpDoctores.resx">
+      <DependentUpon>ImpDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingreso_Estudios.resx">
+      <DependentUpon>Ingreso_Estudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpresa.resx">
+      <DependentUpon>MenuEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaEmpresa.resx">
+      <DependentUpon>NuevaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtrosIngreForm.resx">
+      <DependentUpon>OtrosIngreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDiario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDiario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte1.resx">
+      <DependentUpon>Reporte1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte2.resx">
+      <DependentUpon>Reporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteConMensual.resx">
+      <DependentUpon>ReporteConMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDiario.resx">
+      <DependentUpon>ReporteDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDireccion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteDireccion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDirecciones.resx">
+      <DependentUpon>ReporteDirecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAdeudos.resx">
+      <DependentUpon>SelectAdeudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectConMensual.resx">
+      <DependentUpon>SelectConMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDirecciones.resx">
+      <DependentUpon>SelectDirecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectRDiario.resx">
+      <DependentUpon>SelectRDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectReporte2.resx">
+      <DependentUpon>SelectReporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="empresaDataSet.xsc">
+      <DependentUpon>empresaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="empresaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empresaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="empresaDataSet.xss">
+      <DependentUpon>empresaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Empresa_ClaveTemporal.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,360 @@
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\bin\Debug\Empresa.exe.config
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\bin\Debug\Empresa.exe
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\bin\Debug\Empresa.pdb
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.exe
+c:\users\sistemas\documents\visual studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.pdb
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\sistemas\Documents\Visual Studio 2013\Projects\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+E:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe.config
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.exe
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.pdb
+E:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe
+E:\Instalar\Empresa\Empresa\bin\Debug\Empresa.pdb
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.EgresosClass.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectRDiARIO.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+E:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+E:\Instalar\Empresa\Empresa\bin\Debug\Empresa.application
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+E:\Instalar\Empresa\Empresa\obj\Debug\Empresa.application
+F:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe.config
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.exe
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.pdb
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.EgresosClass.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+F:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+F:\Instalar\Empresa\Empresa\bin\Debug\Empresa.application
+F:\Instalar\Empresa\Empresa\bin\Debug\Empresa.exe
+F:\Instalar\Empresa\Empresa\bin\Debug\Empresa.pdb
+F:\Instalar\Empresa\Empresa\bin\Debug\MySql.Data.DLL
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+F:\Instalar\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.exe
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.pdb
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\bin\Debug\Empresa.exe.manifest
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\bin\Debug\Empresa.application
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\bin\Debug\Empresa.exe
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\bin\Debug\Empresa.pdb
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.EgresosClass.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.exe.manifest
+C:\Users\sistemas\Desktop\Instalar\Empresa - Copy\Empresa\obj\Debug\Empresa.application
+E:\Empresa\Empresa\bin\Debug\Empresa.exe.config
+E:\Empresa\Empresa\obj\Debug\Empresa.exe
+E:\Empresa\Empresa\obj\Debug\Empresa.pdb
+E:\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+E:\Empresa\Empresa\bin\Debug\Empresa.application
+E:\Empresa\Empresa\bin\Debug\Empresa.exe
+E:\Empresa\Empresa\bin\Debug\Empresa.pdb
+E:\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+E:\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.EgresosClass.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+E:\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+E:\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Empresa\Empresa\bin\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa\Empresa\bin\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Empresa\Empresa\bin\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\bin\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\bin\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\bin\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\bin\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.EgresosClass.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Empresa - copia\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+E:\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\bin\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\bin\Debug\Empresa.pdb
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+G:\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe.config
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.exe
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.pdb
+G:\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+G:\Prueba\Empresa\Empresa\bin\Debug\Empresa.application
+G:\Prueba\Empresa\Empresa\bin\Debug\Empresa.exe
+G:\Prueba\Empresa\Empresa\bin\Debug\Empresa.pdb
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+G:\Prueba\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Otros_Ingresos.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.OtrosIngreForm.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.ReporteDirecciones.resources
+C:\Users\aronk_000\Desktop\Prueba\Empresa\Empresa\obj\Debug\Empresa.SelectDirecciones.resources
+G:\Empresa\Empresa\bin\Debug\Empresa.exe.config
+G:\Empresa\Empresa\obj\Debug\Empresa.exe
+G:\Empresa\Empresa\obj\Debug\Empresa.pdb
+G:\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+G:\Empresa\Empresa\bin\Debug\Empresa.application
+G:\Empresa\Empresa\bin\Debug\Empresa.exe
+G:\Empresa\Empresa\bin\Debug\Empresa.pdb
+G:\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+G:\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Otros_Ingresos.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.OtrosIngreForm.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.ReporteDirecciones.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.SelectDirecciones.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+G:\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+G:\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+G:\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Otros_Ingresos.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.OtrosIngreForm.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.ReporteDirecciones.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.SelectDirecciones.resources
+C:\Users\aronk_000\Desktop\Empresa\Empresa\obj\Debug\Empresa.diagnosticoConMensual.resources
+G:\SuperEmpresa\Empresa\Empresa\bin\Debug\Empresa.exe.config
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.exe
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.pdb
+G:\SuperEmpresa\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+G:\SuperEmpresa\Empresa\Empresa\bin\Debug\Empresa.application
+G:\SuperEmpresa\Empresa\Empresa\bin\Debug\Empresa.exe
+G:\SuperEmpresa\Empresa\Empresa\bin\Debug\Empresa.pdb
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Otros_Ingresos.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.diagnosticoConMensual.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.OtrosIngreForm.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.ReporteDirecciones.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.SelectDirecciones.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+G:\SuperEmpresa\Empresa\Empresa\obj\Debug\Empresa.application
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.exe
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.pdb
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\bin\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\bin\Debug\Empresa.application
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\bin\Debug\Empresa.exe
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\bin\Debug\Empresa.pdb
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.AdeudoDoctor.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.BackUp.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.buscar_catalogo.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Doctores.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Egresos.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_Otros_Ingresos.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Catalogo_de_Estudios.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.diagnosticoConMensual.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.EgresosForm.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Form1.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.ImpDoctores.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Ingreso_Estudios.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.MenuEmpresa.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.NuevaEmpresa.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.OtrosIngreForm.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Reporte1.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.Reporte2.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.ReporteConMensual.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.ReporteDiario.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.ReporteDirecciones.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.SelectAdeudos.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.SelectConMensual.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.SelectDirecciones.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.SelectRDiario.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.SelectReporte2.resources
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
+C:\Users\aronk_000\Documents\Empresa\Empresa\Empresa\obj\Debug\Empresa.application
