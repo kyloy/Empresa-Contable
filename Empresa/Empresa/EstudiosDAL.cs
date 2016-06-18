@@ -16,7 +16,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into estudios (idEstudios, Descripcion, Precio_pesos, Precio_dolar, Adeudo) values ('{0}','{1}','{2}','{3}','{4}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into estudios (idEstudios, Descripcion, Precio_pesos, Precio_dolar, Adeudo) values ('{0}','{1}','{2}','{3}','{4}');",
                     pEstudios.IdEstudios, pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
@@ -160,7 +160,7 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Update estudios set Descripcion='{0}', Precio_pesos='{1}', Precio_dolar='{2}', Adeudo='{3}' where idEstudios={4}",
+            MySqlCommand comando = new MySqlCommand(string.Format("Update estudios set Descripcion='{0}', Precio_pesos='{1}', Precio_dolar='{2}', Adeudo='{3}' where idEstudios={4};",
                  pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo, pEstudios.IdEstudios), conexion);
 
             retorno = comando.ExecuteNonQuery();
@@ -182,7 +182,7 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Delete From estudios where idEstudios={0}", pId), conexion);
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From estudios where idEstudios={0};", pId), conexion);
 
             retorno = comando.ExecuteNonQuery();
             conexion.Close();

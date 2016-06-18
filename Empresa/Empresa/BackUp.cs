@@ -18,6 +18,16 @@ namespace Empresa
             InitializeComponent();
         }
 
+        public void Historial(string historia)
+        {
+            using (System.IO.StreamWriter file =
+            new System.IO.StreamWriter(@"C:\Backup\Historial.txt", true))
+            {
+                file.WriteLine(DateTime.Now.ToString());
+                file.WriteLine(historia);
+            }
+        }
+
         private void btnExportar_Click(object sender, EventArgs e)
         {
             string fileName = "EmpresaBackup.txt";
@@ -55,11 +65,12 @@ namespace Empresa
             {
                 System.IO.Directory.CreateDirectory(targetPath);
             }
-
+            string historial = System.IO.File.ReadAllText(@"C:\Backup\EmpresaBackup.txt");
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);
             MessageBox.Show("BASE DE DATOS GUARDADA");
+            Historial(historial);
             System.IO.File.WriteAllText(@"C:\Backup\EmpresaBackup.txt", "USE empresa;\n\r");
         }
 

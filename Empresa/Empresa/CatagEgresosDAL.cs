@@ -17,7 +17,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into catalogo_egresos (Clave, Descripcion) values ('{0}','{1}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into catalogo_egresos (Clave, Descripcion) values ('{0}','{1}');",
                   pEgresos.Clave, pEgresos.Descripcion), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
@@ -87,7 +87,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Update catalogo_egresos set Clave='{0}', Descripcion='{1}' where idcatalogo_egresos='{2}'",
+                MySqlCommand comando = new MySqlCommand(string.Format("Update catalogo_egresos set Clave='{0}', Descripcion='{1}' where idcatalogo_egresos='{2}';",
                     pEgresos.Clave, pEgresos.Descripcion, pEgresos.idCatalogo_Egresos), conexion);
 
                 retorno = comando.ExecuteNonQuery();
@@ -131,7 +131,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Delete From catalogo_egresos where idcatalogo_egresos='{0}'", pId), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format("Delete From catalogo_egresos where idcatalogo_egresos='{0}';", pId), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();

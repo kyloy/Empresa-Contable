@@ -16,7 +16,7 @@ namespace Empresa
 
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresas (idEmpresa, Razon_Social, Giro, Domicilio, Ciudad, Municipio, Estado, RFC, CURP, Reg_Patronal_imss, Nombre_Gerente, Nombre_Contador, Representante_Legal) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresas (idEmpresa, Razon_Social, Giro, Domicilio, Ciudad, Municipio, Estado, RFC, CURP, Reg_Patronal_imss, Nombre_Gerente, Nombre_Contador, Representante_Legal) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}');",
                     pEmpresa.IdEmpresa, pEmpresa.Razon_Social, pEmpresa.Giro, pEmpresa.Domicilio, pEmpresa.Ciudad, pEmpresa.Municipio, pEmpresa.Estado, pEmpresa.RFC, pEmpresa.CURP, pEmpresa.Reg_imss, pEmpresa.Nombre_Gerente, pEmpresa.Nombre_Contador, pEmpresa.Representante_Legal), BdComun.ObtenerConexion());
                 retorno = comando.ExecuteNonQuery();
                 #region Guardar datos en backup
@@ -136,7 +136,7 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresas (idEmpresa, Razon_Social, Giro, Domicilio, Ciudad, Municipio, Estado, RFC, CURP, Reg_Patronal_imss, Nombre_Gerente, Nombre_Contador, Representante_Legal) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')",
+            MySqlCommand comando = new MySqlCommand(string.Format("Insert into empresas (idEmpresa, Razon_Social, Giro, Domicilio, Ciudad, Municipio, Estado, RFC, CURP, Reg_Patronal_imss, Nombre_Gerente, Nombre_Contador, Representante_Legal) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}');",
                 pEmpresa.IdEmpresa, pEmpresa.Razon_Social, pEmpresa.Giro, pEmpresa.Domicilio, pEmpresa.Ciudad, pEmpresa.Municipio, pEmpresa.Estado, pEmpresa.RFC, pEmpresa.CURP, pEmpresa.Reg_imss, pEmpresa.Nombre_Gerente, pEmpresa.Nombre_Contador, pEmpresa.Representante_Legal), BdComun.ObtenerConexion());
 
             retorno = comando.ExecuteNonQuery();
@@ -157,7 +157,7 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresas where idEmpresa={0}", pId), conexion);
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From empresas where idEmpresa={0};", pId), conexion);
 
             retorno = comando.ExecuteNonQuery();
 
