@@ -49,3 +49,5 @@ Temporary Items
 
 Empresa/Empresa/bin/
 Empresa/Empresa/obj/
+*.application
+*.exe
