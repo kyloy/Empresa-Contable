@@ -56,8 +56,6 @@ namespace Empresa
             // Asigno el paramametro a la coleccion
             //
             ParameterFields paramFiels1 = new ParameterFields();
-            //ParameterFields paramFiels2 = new ParameterFields();
-            //ParameterFields paramFiels3 = new ParameterFields();
             paramFiels1.Add(param1);
             paramFiels1.Add(param2);
             paramFiels1.Add(param3);
@@ -65,22 +63,13 @@ namespace Empresa
 
             //
             // Asigno la coleccion de parametros al Crystal Viewer
-            //
-            //crystalReportViewer1.ParameterFieldInfo = paramFiels2;
             crystalReportViewer1.ParameterFieldInfo = paramFiels1;
-            //crystalReportViewer1.ParameterFieldInfo = paramFiels3;
 
             //
             // Creo la instancia del reporte
             //
             AdeudosDoctor report = new AdeudosDoctor();
-
-            ////
-            //// Cambio el path de la base de datos
-            ////
-            //string rutadb = Path.Combine(Application.StartupPath, "TestDb.mdb");
-            //report.DataSourceConnections[0].SetConnection("", rutadb, false);
-
+            
             ////
             //// Asigno el reporte a visor
             ////

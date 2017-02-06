@@ -324,6 +324,7 @@ namespace Empresa
                     txtNombreEstudio.Text = pEstudio.Descripcion;
                     txtPesos.Text = pEstudio.Precio_Pesos.ToString();
                     txtDolar.Text = pEstudio.Precio_Dolar.ToString();
+                    txtAdeudo.Text = pEstudio.Adeudo.ToString();
                 }
                 if (txtIdEstudio.Text != "" && btnGuardar.Visible == true)
                 {

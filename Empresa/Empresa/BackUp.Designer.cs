@@ -44,9 +44,10 @@
             "F:",
             "G:",
             "H:"});
-            this.comboBox1.Location = new System.Drawing.Point(200, 83);
+            this.comboBox1.Location = new System.Drawing.Point(208, 63);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(57, 33);
+            this.comboBox1.Size = new System.Drawing.Size(44, 28);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "D:";
             // 
@@ -54,43 +55,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(114, 86);
+            this.label1.Location = new System.Drawing.Point(144, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Unidad:";
             // 
             // btnExportar
             // 
             this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportar.Location = new System.Drawing.Point(23, 202);
+            this.btnExportar.Location = new System.Drawing.Point(11, 175);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(150, 35);
+            this.btnExportar.Size = new System.Drawing.Size(163, 28);
             this.btnExportar.TabIndex = 0;
-            this.btnExportar.Text = "EXPORTAR";
+            this.btnExportar.Text = "SUBIR a USB";
             this.btnExportar.UseVisualStyleBackColor = true;
             this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // btnImportar
             // 
             this.btnImportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportar.Location = new System.Drawing.Point(191, 202);
+            this.btnImportar.Location = new System.Drawing.Point(224, 175);
+            this.btnImportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(164, 35);
+            this.btnImportar.Size = new System.Drawing.Size(163, 28);
             this.btnImportar.TabIndex = 1;
-            this.btnImportar.Text = "IMPORTAR";
+            this.btnImportar.Text = "BAJAR de USB";
             this.btnImportar.UseVisualStyleBackColor = true;
             this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
             // BackUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 285);
+            this.ClientSize = new System.Drawing.Size(398, 273);
             this.Controls.Add(this.btnImportar);
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BackUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BackUp";

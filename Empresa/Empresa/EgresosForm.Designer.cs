@@ -122,6 +122,7 @@
             // 
             // txtClave
             // 
+            this.txtClave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClave.Location = new System.Drawing.Point(230, 403);
             this.txtClave.Margin = new System.Windows.Forms.Padding(4);
@@ -134,6 +135,7 @@
             // 
             // txtConcepto
             // 
+            this.txtConcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtConcepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConcepto.Location = new System.Drawing.Point(384, 403);
             this.txtConcepto.Margin = new System.Windows.Forms.Padding(4);
@@ -145,6 +147,7 @@
             // 
             // txtPesos
             // 
+            this.txtPesos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesos.Location = new System.Drawing.Point(721, 405);
             this.txtPesos.Margin = new System.Windows.Forms.Padding(4);
@@ -157,6 +160,7 @@
             // 
             // txtDolar
             // 
+            this.txtDolar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDolar.Location = new System.Drawing.Point(877, 405);
             this.txtDolar.Margin = new System.Windows.Forms.Padding(4);
@@ -274,6 +278,7 @@
             // 
             // txtCheque
             // 
+            this.txtCheque.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCheque.Location = new System.Drawing.Point(230, 472);
             this.txtCheque.Margin = new System.Windows.Forms.Padding(4);

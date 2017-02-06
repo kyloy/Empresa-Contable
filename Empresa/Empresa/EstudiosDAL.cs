@@ -16,10 +16,17 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into estudios (idEstudios, Descripcion, Precio_pesos, Precio_dolar, Adeudo) values ('{0}','{1}','{2}','{3}','{4}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into estudios (idEstudios, Descripcion, Precio_pesos, Precio_dolar, Adeudo) values ('{0}','{1}','{2}','{3}','{4}');",
                     pEstudios.IdEstudios, pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -110,13 +117,14 @@ namespace Empresa
                 {
                     //IDEstudio
                     MySqlCommand _comando = new MySqlCommand(String.Format(
-                   "SELECT Descripcion, Precio_pesos, Precio_dolar FROM estudios Where idEstudios = '{0}'", Dato), conexion);
+                   "SELECT Descripcion, Precio_pesos, Precio_dolar, Adeudo FROM estudios Where idEstudios = '{0}'", Dato), conexion);
                     MySqlDataReader _reader = _comando.ExecuteReader();
                     while (_reader.Read())
                     {
                         pEstudios.Descripcion = _reader.GetString(0);
                         pEstudios.Precio_Pesos = Convert.ToInt32(_reader.GetString(1));
                         pEstudios.Precio_Dolar = Convert.ToInt32(_reader.GetString(2));
+                        pEstudios.Adeudo = Convert.ToInt32(_reader.GetString(3));
                     }
                     conexion.Close();                    
                 }
@@ -153,10 +161,17 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Update estudios set Descripcion='{0}', Precio_pesos='{1}', Precio_dolar='{2}', Adeudo='{3}' where idEstudios={4}",
+            MySqlCommand comando = new MySqlCommand(string.Format("Update estudios set Descripcion='{0}', Precio_pesos='{1}', Precio_dolar='{2}', Adeudo='{3}' where idEstudios={4};",
                  pEstudios.Descripcion, pEstudios.Precio_Pesos, pEstudios.Precio_Dolar, pEstudios.Adeudo, pEstudios.IdEstudios), conexion);
 
             retorno = comando.ExecuteNonQuery();
+            #region Guardar datos en backup
+            using (System.IO.StreamWriter file =
+       new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+            {
+                file.WriteLine(comando.CommandText);
+            }
+            #endregion
             conexion.Close();
 
             return retorno;
@@ -168,11 +183,17 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
-            MySqlCommand comando = new MySqlCommand(string.Format("Delete From estudios where idEstudios={0}", pId), conexion);
+            MySqlCommand comando = new MySqlCommand(string.Format("Delete From estudios where idEstudios={0};", pId), conexion);
 
             retorno = comando.ExecuteNonQuery();
             conexion.Close();
-
+            #region Guardar datos en backup
+            using (System.IO.StreamWriter file =
+       new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+            {
+                file.WriteLine(comando.CommandText);
+            }
+            #endregion
             return retorno;
 
         }

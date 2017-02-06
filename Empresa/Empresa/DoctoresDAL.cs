@@ -16,10 +16,17 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into doctores (idDoctor, Nombre, Apellido_paterno, Apellido_materno, Direccion, Colonia, Ciudad, Estado, Pais, Zona, Telefono, Celular, Aseguranza) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into doctores (idDoctor, Nombre, Apellido_paterno, Apellido_materno, Direccion, Colonia, Ciudad, Estado, Pais, Zona, Telefono, Celular, Aseguranza) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}');",
                     pDoctores.IdDoctor, pDoctores.Nombre, pDoctores.Apellido_Paterno, pDoctores.Apellido_Materno, pDoctores.Direccion, pDoctores.Colonia, pDoctores.Ciudad, pDoctores.Estado, pDoctores.Pais, pDoctores.Zona, pDoctores.Telefono, pDoctores.Celular, pDoctores.Aseguranza), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -294,11 +301,18 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Update doctores set Nombre='{0}', Apellido_paterno='{1}', Apellido_materno='{2}', Direccion='{3}', Colonia='{4}', Ciudad='{5}', Estado='{6}', Pais='{7}', Zona='{8}', Telefono='{9}', Celular='{10}', Aseguranza='{11}' where idDoctor='{12}'",
+                MySqlCommand comando = new MySqlCommand(string.Format("Update doctores set Nombre='{0}', Apellido_paterno='{1}', Apellido_materno='{2}', Direccion='{3}', Colonia='{4}', Ciudad='{5}', Estado='{6}', Pais='{7}', Zona='{8}', Telefono='{9}', Celular='{10}', Aseguranza='{11}' where idDoctor='{12}';",
                      pDoctores.Nombre, pDoctores.Apellido_Paterno, pDoctores.Apellido_Materno, pDoctores.Direccion, pDoctores.Colonia, pDoctores.Ciudad, pDoctores.Estado, pDoctores.Pais, pDoctores.Zona, pDoctores.Telefono, pDoctores.Celular, pDoctores.Aseguranza, pDoctores.IdDoctor), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -314,11 +328,18 @@ namespace Empresa
             int retorno = 0;
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
-            {   
-                MySqlCommand comando = new MySqlCommand(string.Format("Delete From doctores where IdDoctor='{0}'", pId), conexion);
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format("Delete From doctores where IdDoctor='{0}';", pId), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)

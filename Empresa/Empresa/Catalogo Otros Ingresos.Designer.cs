@@ -45,9 +45,10 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(622, 438);
+            this.btnCancelar.Location = new System.Drawing.Point(466, 356);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(158, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(118, 30);
             this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(472, 438);
+            this.btnEliminar.Location = new System.Drawing.Point(354, 356);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(144, 37);
+            this.btnEliminar.Size = new System.Drawing.Size(108, 30);
             this.btnEliminar.TabIndex = 20;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(12, 438);
+            this.btnNuevo.Location = new System.Drawing.Point(9, 356);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(126, 37);
+            this.btnNuevo.Size = new System.Drawing.Size(94, 30);
             this.btnNuevo.TabIndex = 19;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -79,9 +82,10 @@
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(294, 438);
+            this.btnActualizar.Location = new System.Drawing.Point(220, 356);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(172, 37);
+            this.btnActualizar.Size = new System.Drawing.Size(129, 30);
             this.btnActualizar.TabIndex = 18;
             this.btnActualizar.Text = "MODIFICAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -90,9 +94,10 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(805, 438);
+            this.btnSalir.Location = new System.Drawing.Point(604, 356);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(90, 37);
+            this.btnSalir.Size = new System.Drawing.Size(68, 30);
             this.btnSalir.TabIndex = 17;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -101,9 +106,10 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(144, 438);
+            this.btnGuardar.Location = new System.Drawing.Point(108, 356);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(144, 37);
+            this.btnGuardar.Size = new System.Drawing.Size(108, 30);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -114,9 +120,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 343);
+            this.label2.Location = new System.Drawing.Point(213, 279);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 25);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "CONCEPTO";
             // 
@@ -124,9 +131,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 343);
+            this.label1.Location = new System.Drawing.Point(90, 279);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "CLAVE";
             // 
@@ -134,10 +142,11 @@
             // 
             this.txtConcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtConcepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConcepto.Location = new System.Drawing.Point(289, 371);
+            this.txtConcepto.Location = new System.Drawing.Point(217, 301);
+            this.txtConcepto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConcepto.Name = "txtConcepto";
             this.txtConcepto.ReadOnly = true;
-            this.txtConcepto.Size = new System.Drawing.Size(355, 30);
+            this.txtConcepto.Size = new System.Drawing.Size(267, 26);
             this.txtConcepto.TabIndex = 13;
             this.txtConcepto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtConcepto_KeyDown);
             // 
@@ -145,28 +154,30 @@
             // 
             this.txtClave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClave.Location = new System.Drawing.Point(123, 371);
+            this.txtClave.Location = new System.Drawing.Point(92, 301);
+            this.txtClave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtClave.Name = "txtClave";
             this.txtClave.ReadOnly = true;
-            this.txtClave.Size = new System.Drawing.Size(134, 30);
+            this.txtClave.Size = new System.Drawing.Size(102, 26);
             this.txtClave.TabIndex = 12;
             this.txtClave.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtClave_KeyDown);
             // 
             // dgvCatagOtrosIngre
             // 
             this.dgvCatagOtrosIngre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCatagOtrosIngre.Location = new System.Drawing.Point(79, 29);
+            this.dgvCatagOtrosIngre.Location = new System.Drawing.Point(59, 24);
+            this.dgvCatagOtrosIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvCatagOtrosIngre.Name = "dgvCatagOtrosIngre";
             this.dgvCatagOtrosIngre.RowTemplate.Height = 24;
-            this.dgvCatagOtrosIngre.Size = new System.Drawing.Size(735, 262);
+            this.dgvCatagOtrosIngre.Size = new System.Drawing.Size(551, 213);
             this.dgvCatagOtrosIngre.TabIndex = 11;
             this.dgvCatagOtrosIngre.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCatagOtrosIngre_CellMouseClick);
             // 
             // Catalogo_Otros_Ingresos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 504);
+            this.ClientSize = new System.Drawing.Size(680, 410);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevo);
@@ -178,7 +189,9 @@
             this.Controls.Add(this.txtConcepto);
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.dgvCatagOtrosIngre);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Catalogo_Otros_Ingresos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo_Otros_Ingresos";
             this.Load += new System.EventHandler(this.Catalogo_Otros_Ingresos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCatagOtrosIngre)).EndInit();

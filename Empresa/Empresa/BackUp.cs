@@ -18,9 +18,19 @@ namespace Empresa
             InitializeComponent();
         }
 
+        public void Historial(string historia)
+        {
+            using (System.IO.StreamWriter file =
+            new System.IO.StreamWriter(@"C:\Backup\Historial.txt", true))
+            {
+                file.WriteLine(DateTime.Now.ToString());
+                file.WriteLine(historia);
+            }
+        }
+
         private void btnExportar_Click(object sender, EventArgs e)
         {
-            string fileName = "prueba.txt";
+            string fileName = "EmpresaBackup.txt";
             string sourcePath = @"C:\Backup";
             string targetPath;
             switch (comboBox1.Text)
@@ -55,29 +65,64 @@ namespace Empresa
             {
                 System.IO.Directory.CreateDirectory(targetPath);
             }
-
+            string historial = System.IO.File.ReadAllText(@"C:\Backup\EmpresaBackup.txt");
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);
+            MessageBox.Show("BASE DE DATOS GUARDADA");
+            Historial(historial);
+            System.IO.File.WriteAllText(@"C:\Backup\EmpresaBackup.txt", "USE empresa;\n\r");
         }
 
         private void btnImportar_Click(object sender, EventArgs e)
         {
-            string Backup = System.IO.File.ReadAllText(@"C:\Backup\prueba.txt");
+            string[] Backup;
+            switch (comboBox1.Text)
+            {
+                case "D:":
+                    Backup = System.IO.File.ReadAllLines(@"D:\Backup\EmpresaBackup.txt");
+                    break;
+                case "E:":
+                    Backup = System.IO.File.ReadAllLines(@"E:\Backup\EmpresaBackup.txt");
+                    break;
+                case "F:":
+                    Backup = System.IO.File.ReadAllLines(@"F:\Backup\EmpresaBackup.txt");
+                    break;
+                case "G:":
+                    Backup = System.IO.File.ReadAllLines(@"G:\Backup\EmpresaBackup.txt");
+                    break;
+                case "H:":
+                    Backup = System.IO.File.ReadAllLines(@"H:\Backup\EmpresaBackup.txt");
+                    break;
+                default:
+                    MessageBox.Show("Selecione una opcion correcta");
+                    Backup = System.IO.File.ReadAllLines(@"D:\Backup\EmpresaBackup.txt");
+                    break;
+            }            
             int retorno = 0;
-            MySqlConnection conexion = BdComun.ObtenerConexion();
+           
             try
             {
-                MySqlCommand comando = new MySqlCommand(Backup,conexion);
-                retorno = comando.ExecuteNonQuery();
-                conexion.Close();
-                System.IO.File.WriteAllText(@"C:\Backup\prueba.txt", "USE empresa");
+                foreach (string line in Backup)
+                {
+                    // Set cursor as hourglass
+                    Cursor.Current = Cursors.WaitCursor;
+                    MySqlConnection conexion = BdComun.ObtenerConexion();
+                    MySqlCommand comando = new MySqlCommand(line, conexion);
+                    retorno = comando.ExecuteNonQuery();
+                    conexion.Close();
+                }
+                // Set cursor as default arrow
+                Cursor.Current = Cursors.Default;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-                conexion.Close();                
+                MessageBox.Show(ex.Message);               
             }
+            if (retorno > 0)
+                MessageBox.Show("BASE DE DATOS ACTUALIZADA");
+            else
+                MessageBox.Show("ERROR AL IMPORTAR BASE DE DATOS");
         }
     }
 }

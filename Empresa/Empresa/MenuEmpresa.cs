@@ -91,11 +91,11 @@ namespace Empresa
 
         private void dgvEmpresa_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form1 menu = new Form1();
-            this.Hide();
-            menu.ShowDialog();
-            this.Show();
-            dgvEmpresa.DataSource = EmpresaDAL.LLenar();
+            //Form1 menu = new Form1();
+            //this.Hide();
+            //menu.ShowDialog();
+            //this.Show();
+            //dgvEmpresa.DataSource = EmpresaDAL.LLenar();
         }
 
         private void dgvEmpresa_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

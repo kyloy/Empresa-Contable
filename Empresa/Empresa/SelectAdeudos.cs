@@ -41,6 +41,17 @@ namespace Empresa
                 rep.ShowDialog();
                 this.Show();
             }
+            else if(radioButton3.Checked == true)
+            {
+                AdeudosRango rep = new AdeudosRango();
+                rep.fecha1 = dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Year;
+                rep.fecha2 = dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Year;
+                rep.Titulo = Titulo;
+                rep.contador = Convert.ToInt32(txtIdDoctor.Text);
+                this.Hide();
+                rep.ShowDialog();
+                this.Show();
+            }
         }
 
         private void SelectAdeudos_Load(object sender, EventArgs e)
@@ -72,6 +83,7 @@ namespace Empresa
         {
             btnBuscar.Visible = true;
             label3.Visible = true;
+            label3.Text = "ID DOCTOR:";
             txtIdDoctor.Visible = true;
         }
 
@@ -89,6 +101,14 @@ namespace Empresa
             buscar.ShowDialog();
             this.Show();
             txtIdDoctor.Text = buscar.SeleccionDoc.IdDoctor;            
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            btnBuscar.Visible = true;
+            label3.Visible = true;
+            label3.Text = "LIMITE:";
+            txtIdDoctor.Visible = true;
         }
     }
 }

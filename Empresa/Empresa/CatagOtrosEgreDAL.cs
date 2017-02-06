@@ -17,10 +17,17 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into catalogo_otros (Clave, Descripcion) values ('{0}','{1}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into catalogo_otros (Clave, Descripcion) values ('{0}','{1}');",
                   pOtros.Clave, pOtros.Descripcion), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -80,11 +87,18 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Update catalogo_otros set Clave='{0}', Descripcion='{1}' where idcatalogo_otros='{2}'",
+                MySqlCommand comando = new MySqlCommand(string.Format("Update catalogo_otros set Clave='{0}', Descripcion='{1}' where idcatalogo_otros='{2}';",
                     pOtros.Clave, pOtros.Descripcion, pOtros.idCatalogo_OtrosEgresos), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -117,10 +131,17 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Delete From catalogo_otros where idcatalogo_otros='{0}'", pId), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format("Delete From catalogo_otros where idcatalogo_otros='{0}';", pId), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)

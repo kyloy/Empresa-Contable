@@ -17,10 +17,19 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into egresos (Concepto, Pesos, Dolares, Fecha, Clave, empresa, Cheque) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into egresos (Concepto, Pesos, Dolares, Fecha, Clave, empresa, Cheque) values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}');",
                   pEgresos.Concepto, pEgresos.Pesos, pEgresos.Dolar, pEgresos.Fecha, pEgresos.Clave,pEgresos.Empresa, pEgresos.Cheque), conexion);
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
+
                 return retorno;
             }
             catch (Exception ex)
@@ -53,7 +62,7 @@ namespace Empresa
             try
             {
                 MySqlCommand _comando = new MySqlCommand(String.Format(
-               "SELECT idEgresos, Concepto, Pesos, Dolares, Fecha, Clave, Cheque FROM egresos where empresa='{0}'", Empresa), conexion);
+               "SELECT idEgresos, Concepto, Pesos, Dolares, Fecha, Clave, Cheque FROM egresos where empresa='{0}';", Empresa), conexion);
                 MySqlDataReader _reader = _comando.ExecuteReader();
                 while (_reader.Read())
                 {
@@ -67,7 +76,7 @@ namespace Empresa
                     pEgresos.Cheque = _reader.GetString(6);
                     _lista.Add(pEgresos);
                 }
-                conexion.Close();
+                conexion.Close();   
                 return _lista;
             }
             catch (Exception ex)
@@ -84,7 +93,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
             //IDDOCTOR
             MySqlCommand _comando = new MySqlCommand(String.Format(
-           "SELECT Concepto FROM egresos Where idEgresos = '{0}'", Dato), conexion);
+           "SELECT Concepto FROM egresos Where idEgresos = '{0}';", Dato), conexion);
             MySqlDataReader _reader = _comando.ExecuteReader();
             while (_reader.Read())
             {
@@ -101,7 +110,7 @@ namespace Empresa
             MySqlConnection conexion = BdComun.ObtenerConexion();
 
             MySqlCommand _comando = new MySqlCommand(String.Format(
-            "SELECT Concepto, Pesos, Dolares, Fecha, Clave, Cheque FROM egresos  where idEgresos ='{0}'", pId), BdComun.ObtenerConexion());
+            "SELECT Concepto, Pesos, Dolares, Fecha, Clave, Cheque FROM egresos  where idEgresos ='{0}';", pId), BdComun.ObtenerConexion());
             MySqlDataReader _reader = _comando.ExecuteReader();
             while (_reader.Read())
             {
@@ -113,7 +122,7 @@ namespace Empresa
                 pEgresos.Cheque = _reader.GetString(5);            
             }
 
-            conexion.Close();
+            conexion.Close();           
             return pEgresos;
 
         }
@@ -125,11 +134,18 @@ namespace Empresa
             {
                 MySqlConnection conexion = BdComun.ObtenerConexion();
 
-                MySqlCommand comando = new MySqlCommand(string.Format("Update egresos set Concepto='{0}', Pesos='{1}', Dolares='{2}', Fecha='{3}', Clave='{4}', Cheque='{6}' where idEgresos='{5}'",
+                MySqlCommand comando = new MySqlCommand(string.Format("Update egresos set Concepto='{0}', Pesos='{1}', Dolares='{2}', Fecha='{3}', Clave='{4}', Cheque='{6}' where idEgresos='{5}';",
                     pEgresos.Concepto, pEgresos.Pesos, pEgresos.Dolar, pEgresos.Fecha, pEgresos.Clave, pEgresos.IdEgresos, pEgresos.Cheque), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
@@ -145,10 +161,17 @@ namespace Empresa
             try
             {
                 MySqlConnection conexion = BdComun.ObtenerConexion();
-                MySqlCommand comando = new MySqlCommand(string.Format("Delete From Egresos where idEgresos='{0}'", pId), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format("Delete From Egresos where idEgresos='{0}';", pId), conexion);
 
                 retorno = comando.ExecuteNonQuery();
                 conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
                 return retorno;
             }
             catch (Exception ex)
