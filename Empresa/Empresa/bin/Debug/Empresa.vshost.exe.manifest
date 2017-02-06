@@ -234,14 +234,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Empresa.exe" size="559104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Empresa.exe" size="559616">
       <assemblyIdentity name="Empresa" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AVwf4XCS6szCeqjaRUog/Q6yIOJEaLRDtRUBEu6PO94=</dsig:DigestValue>
+        <dsig:DigestValue>kzJU9BlfuX5NgqBwe18Sl+qP72Vxng9+jw87FtTqg5I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

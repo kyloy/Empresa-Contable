@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportDiario1 = new Empresa.ReportDiario();
             this.ReportDiario2 = new Empresa.ReportDiario();
+            this.ReportDiario1 = new Empresa.ReportDiario();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -54,6 +54,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "ReporteDiario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reporte diario";
             this.Load += new System.EventHandler(this.ReporteDiario_Load);
             this.ResumeLayout(false);
 
