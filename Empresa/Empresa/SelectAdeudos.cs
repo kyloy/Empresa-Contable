@@ -53,35 +53,12 @@ namespace Empresa
                 this.Show();
             }
         }
-
-        private void SelectAdeudos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             btnBuscar.Visible = true;
+            btnEditar.Visible = true;
             label3.Visible = true;
             label3.Text = "ID DOCTOR:";
             txtIdDoctor.Visible = true;
@@ -90,6 +67,7 @@ namespace Empresa
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             btnBuscar.Visible = false;
+            btnEditar.Visible = false;
             label3.Visible = false;
             txtIdDoctor.Visible = false;
         }
@@ -109,6 +87,18 @@ namespace Empresa
             label3.Visible = true;
             label3.Text = "LIMITE:";
             txtIdDoctor.Visible = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Editar_Adeudo edit = new Editar_Adeudo();
+            edit.Fecha_final = dateTimePicker1.Value.Year + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day;
+            edit.Fecha_incio = dateTimePicker2.Value.Year + "/" + dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day;
+            edit.Titulo = Titulo;
+            edit.Doctor = txtIdDoctor.Text;
+            this.Hide();
+            edit.ShowDialog();
+            this.Show();
         }
     }
 }

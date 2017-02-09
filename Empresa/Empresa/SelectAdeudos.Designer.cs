@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectAdeudos));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.txtIdDoctor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -49,7 +51,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
@@ -59,7 +60,6 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker2.TabIndex = 1;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label1
             // 
@@ -70,7 +70,6 @@
             this.label1.Size = new System.Drawing.Size(121, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "FECHA INICIO:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -81,12 +80,11 @@
             this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "FECHA FINAL:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(61, 304);
+            this.button1.Location = new System.Drawing.Point(21, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 35);
             this.button1.TabIndex = 4;
@@ -125,7 +123,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(220, 304);
+            this.btnBuscar.Location = new System.Drawing.Point(165, 304);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(118, 35);
             this.btnBuscar.TabIndex = 7;
@@ -162,7 +160,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Enabled = false;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(302, 206);
+            this.radioButton3.Location = new System.Drawing.Point(315, 206);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(80, 24);
@@ -172,11 +170,24 @@
             this.radioButton3.Visible = false;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(315, 304);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(118, 35);
+            this.btnEditar.TabIndex = 11;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Visible = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // SelectAdeudos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 380);
+            this.ClientSize = new System.Drawing.Size(452, 380);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtIdDoctor);
@@ -188,10 +199,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectAdeudos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PARAMETROS";
-            this.Load += new System.EventHandler(this.SelectAdeudos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +221,6 @@
         private System.Windows.Forms.TextBox txtIdDoctor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

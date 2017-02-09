@@ -176,6 +176,14 @@
     </Compile>
     <Compile Include="Doctores.cs" />
     <Compile Include="DoctoresDAL.cs" />
+    <Compile Include="EditarAdeudo.cs" />
+    <Compile Include="EditarAdeudoDAL.cs" />
+    <Compile Include="Editar_Adeudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar_Adeudo.Designer.cs">
+      <DependentUpon>Editar_Adeudo.cs</DependentUpon>
+    </Compile>
     <Compile Include="EgresosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="diagnosticoConMensual.resx">
       <DependentUpon>diagnosticoConMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar_Adeudo.resx">
+      <DependentUpon>Editar_Adeudo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EgresosForm.resx">
       <DependentUpon>EgresosForm.cs</DependentUpon>
