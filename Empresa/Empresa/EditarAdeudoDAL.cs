@@ -33,6 +33,7 @@ namespace Empresa
                     pEditarAdeudo.Descripcion = _reader.GetString(9);
                     pEditarAdeudo.Adeudo = _reader.GetInt32(10);
                     pEditarAdeudo.Empresa = _reader.GetString(11);
+                    pEditarAdeudo.idIngreso = _reader.GetString(12);
 
                     _lista.Add(pEditarAdeudo);
                 }
