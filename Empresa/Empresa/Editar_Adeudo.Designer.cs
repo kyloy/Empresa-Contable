@@ -34,6 +34,7 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.lbFecha = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.lbEmpresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEditar_Adeudo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,11 +101,22 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // lbEmpresa
+            // 
+            this.lbEmpresa.AutoSize = true;
+            this.lbEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmpresa.Location = new System.Drawing.Point(197, 9);
+            this.lbEmpresa.Name = "lbEmpresa";
+            this.lbEmpresa.Size = new System.Drawing.Size(95, 20);
+            this.lbEmpresa.TabIndex = 6;
+            this.lbEmpresa.Text = "EMPRESA";
+            // 
             // Editar_Adeudo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 602);
+            this.Controls.Add(this.lbEmpresa);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lbFecha);
             this.Controls.Add(this.lbTitulo);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label lbEmpresa;
     }
 }

@@ -26,6 +26,7 @@ namespace Empresa
             List<EditarAdeudo> reporte = new List<EditarAdeudo>();            
             reporte = EditarAdeudoDAL.LLenar(Fecha_incio, Fecha_final, Doctor, Titulo);
             lbDoctor.Text = reporte[0].Nombre_Doctor;
+            lbEmpresa.Text = reporte[0].Empresa;
             lbFecha.Text = String.Format("DEL {0} AL {1}", Fecha_incio, Fecha_final);
             dgvEditar_Adeudo.DataSource = reporte;
             dgvEditar_Adeudo.Columns[0].HeaderText = "No.";
@@ -39,7 +40,8 @@ namespace Empresa
             dgvEditar_Adeudo.Columns[8].Visible = false;
             dgvEditar_Adeudo.Columns[9].Visible = false;
             dgvEditar_Adeudo.Columns[10].Visible = false;
-            dgvEditar_Adeudo.Columns[11].Visible = false;           
+            dgvEditar_Adeudo.Columns[11].Visible = false;
+            dgvEditar_Adeudo.Columns[12].Visible = false;
         }
 
         private void dgvEditar_Adeudo_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)

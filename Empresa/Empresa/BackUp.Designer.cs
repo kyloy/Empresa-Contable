@@ -45,7 +45,7 @@
             "G:",
             "H:"});
             this.comboBox1.Location = new System.Drawing.Point(208, 63);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(44, 28);
             this.comboBox1.TabIndex = 2;
@@ -66,9 +66,9 @@
             // 
             this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportar.Location = new System.Drawing.Point(11, 175);
-            this.btnExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(163, 28);
+            this.btnExportar.Size = new System.Drawing.Size(174, 28);
             this.btnExportar.TabIndex = 0;
             this.btnExportar.Text = "SUBIR a USB";
             this.btnExportar.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // btnImportar
             // 
             this.btnImportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportar.Location = new System.Drawing.Point(224, 175);
-            this.btnImportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImportar.Location = new System.Drawing.Point(208, 175);
+            this.btnImportar.Margin = new System.Windows.Forms.Padding(2);
             this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(163, 28);
+            this.btnImportar.Size = new System.Drawing.Size(179, 28);
             this.btnImportar.TabIndex = 1;
             this.btnImportar.Text = "BAJAR de USB";
             this.btnImportar.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BackUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BackUp";
