@@ -105,12 +105,15 @@ namespace Empresa
             {
                foreach (string line in Backup)
                 {
-                    // Set cursor as hourglass
-                    Cursor.Current = Cursors.WaitCursor;
-                    MySqlConnection conexion = BdComun.ObtenerConexion();
-                    MySqlCommand comando = new MySqlCommand(line, conexion);
-                    retorno = comando.ExecuteNonQuery();
-                    conexion.Close();
+                    if (line != "")
+                    {
+                        // Set cursor as hourglass
+                        Cursor.Current = Cursors.WaitCursor;
+                        MySqlConnection conexion = BdComun.ObtenerConexion();
+                        MySqlCommand comando = new MySqlCommand(line, conexion);
+                        retorno = comando.ExecuteNonQuery();
+                        conexion.Close();
+                    }    
                 }
                 // Set cursor as default arrow
                 Cursor.Current = Cursors.Default;
