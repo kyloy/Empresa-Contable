@@ -191,6 +191,33 @@ namespace Empresa
             }
         }
 
+        public static int LimpiarIngresos(string inicio, string final, string empresa)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = BdComun.ObtenerConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format("SET SQL_SAFE_UPDATES = 0; DELETE FROM ingreso_estudios WHERE Fecha BETWEEN '{0}' AND '{1}' AND Empresa = '{2};", inicio, final, empresa), conexion);
+
+                retorno = comando.ExecuteNonQuery();
+                conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexion.Close();
+                return retorno;
+            }
+        }
+
         public static List<Ingre_Estudios> LLenarFiltro(string Empresa, string year, string month)
         {
             List<Ingre_Estudios> _lista = new List<Ingre_Estudios>();

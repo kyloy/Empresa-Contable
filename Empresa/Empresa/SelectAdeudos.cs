@@ -22,9 +22,10 @@ namespace Empresa
         {
             if (radioButton1.Checked == true)
             {
+                //1/2/2017
                 Reporte1 rep = new Reporte1();
-                rep.fecha1 = dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Year;
-                rep.fecha2 = dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Year;
+                rep.fecha1 = dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Year;
+                rep.fecha2 = dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Year;
                 rep.Titulo = Titulo;
                 this.Hide();
                 rep.ShowDialog();
@@ -33,8 +34,8 @@ namespace Empresa
             else if(radioButton2.Checked==true)
             {
                 AdeudoDoctor rep = new AdeudoDoctor();
-                rep.fecha1 = dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Year;
-                rep.fecha2 = dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Year;
+                rep.fecha1 = dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Year;
+                rep.fecha2 = dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Year;
                 rep.Titulo = Titulo;
                 rep.DoctorSel = txtIdDoctor.Text;
                 this.Hide();
@@ -44,8 +45,8 @@ namespace Empresa
             else if(radioButton3.Checked == true)
             {
                 AdeudosRango rep = new AdeudosRango();
-                rep.fecha1 = dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Year;
-                rep.fecha2 = dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Year;
+                rep.fecha1 = dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Year;
+                rep.fecha2 = dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Year;
                 rep.Titulo = Titulo;
                 rep.contador = Convert.ToInt32(txtIdDoctor.Text);
                 this.Hide();

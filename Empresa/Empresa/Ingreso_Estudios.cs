@@ -174,14 +174,14 @@ namespace Empresa
                         //txtIdDoctor.Clear();
                         //txtNombreDoctor.Clear();
                         txtPaciente.Clear();
-                        txtIdEstudio.Clear();
-                        txtNombreEstudio.Clear();
+                        //txtIdEstudio.Clear();
+                        //txtNombreEstudio.Clear();
                         //txtPesos.Clear();
                         //txtDolar.Clear();
                         //txtAdeudo.Clear();
-                        txtPesos.Text = "0";
-                        txtDolar.Text = "0";
-                        txtAdeudo.Text = "0";
+                        //txtPesos.Text = "0";
+                        //txtDolar.Text = "0";
+                        //txtAdeudo.Text = "0";
                         txtIdDoctor.Focus();
                         ingre.idDoctor = txtIdDoctor.Text;
                         ingre.idEstudio = txtIdEstudio.Text;
@@ -190,6 +190,7 @@ namespace Empresa
                         ingre.Nombre_Estudio = txtNombreEstudio.Text;
                         //dtpFecha.Value = DateTime.Now;
                     }
+                    dgvIngreso_Paciente.CurrentCell = dgvIngreso_Paciente.Rows[dgvIngreso_Paciente.RowCount - 1].Cells[0];
                 }
                 catch (Exception ex)
                 {
@@ -318,6 +319,13 @@ namespace Empresa
         {
             if (Modificar == false)
             {
+                if (txtIdEstudio.Text == "")
+                {
+                    txtNombreEstudio.Text = "";
+                    txtPesos.Text = "0";
+                    txtDolar.Text = "0";
+                    txtAdeudo.Text = "0";
+                }
                 Estudios pEstudio = EstudiosDAL.BuscarEstudio(txtIdEstudio.Text.Trim(), 1);
                 if (pEstudio.Descripcion != null)
                 {
@@ -874,6 +882,15 @@ namespace Empresa
                 }                
             }
             catch { rowIndex = 0; }
+        }
+
+        private void btnLimpiarIngreso_Click(object sender, EventArgs e)
+        {
+            LimpiarIngresos limp = new LimpiarIngresos();
+            this.Hide();
+            limp.Empresa = NombreEmpresa;
+            limp.ShowDialog();
+            this.Show();
         }
         
     }

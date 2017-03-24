@@ -549,3 +549,4 @@ C:\Users\aronk\Documents\GitHub\Empresa-Contable\Empresa\Empresa\bin\Debug\Empre
 C:\Users\aronk\Documents\GitHub\Empresa-Contable\Empresa\Empresa\obj\Debug\Empresa.exe.manifest
 C:\Users\aronk\Documents\GitHub\Empresa-Contable\Empresa\Empresa\obj\Debug\Empresa.application
 C:\Users\aronk\Documents\GitHub\Empresa-Contable\Empresa\Empresa\obj\Debug\Empresa.Editar_Adeudo.resources
+C:\Users\aronk\Documents\GitHub\Empresa-Contable\Empresa\Empresa\obj\Debug\Empresa.LimpiarIngresos.resources

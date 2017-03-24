@@ -26,8 +26,8 @@ namespace Empresa
         private void button1_Click(object sender, EventArgs e)
         {
             ReporteDirecciones rep = new ReporteDirecciones();
-            rep.fecha1 = dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Year;
-            rep.fecha2 = dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Year;
+            rep.fecha1 = dateTimePicker1.Value.Day + "/" + dateTimePicker1.Value.Month + "/" + dateTimePicker1.Value.Year;
+            rep.fecha2 = dateTimePicker2.Value.Day + "/" + dateTimePicker2.Value.Month + "/" + dateTimePicker2.Value.Year;
             rep.Titulo = Titulo;
             this.Hide();
             rep.ShowDialog();

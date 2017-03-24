@@ -33,7 +33,9 @@ namespace Empresa
                     pEditarAdeudo.Descripcion = _reader.GetString(9);
                     pEditarAdeudo.Adeudo = _reader.GetInt32(10);
                     pEditarAdeudo.Empresa = _reader.GetString(11);
-                    pEditarAdeudo.idIngreso = _reader.GetString(12);
+                    pEditarAdeudo.idIngreso = _reader.GetString(14);
+                    pEditarAdeudo.Precio_Pesos = _reader.GetInt32(12);
+                    pEditarAdeudo.Precio_Dolar = _reader.GetInt32(13);
 
                     _lista.Add(pEditarAdeudo);
                 }
@@ -45,6 +47,33 @@ namespace Empresa
                 MessageBox.Show(ex.Message);
                 conexion.Close();
                 return _lista;
+            }
+        }
+
+        public static int Actualizar(int dolar, int pesos, int adeudo, string paciente, int idIngreso_estudio)
+        {
+            int retorno = 0;
+            MySqlConnection conexion = BdComun.ObtenerConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format(" UPDATE ingreso_estudios SET Precio_Dolar = '{0}', Precio_Dolar = '{1}', Adeudo = '{2}', Nombre_Paciente = '{3}' WHERE idingreso_estudios = '{4}';",dolar, pesos, adeudo, paciente, idIngreso_estudio  ), conexion);
+
+                retorno = comando.ExecuteNonQuery();
+                conexion.Close();
+                #region Guardar datos en backup
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(@"C:\Backup\EmpresaBackup.txt", true))
+                {
+                    file.WriteLine(comando.CommandText);
+                }
+                #endregion
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexion.Close();
+                return retorno;
             }
         }
     }

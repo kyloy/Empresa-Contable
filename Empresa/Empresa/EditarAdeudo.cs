@@ -21,12 +21,14 @@ namespace Empresa
         public string Colonia { get; set; }        
         public string Empresa { get; set; }
         public string idIngreso { get; set; }
+        public int Precio_Pesos { get; set; }
+        public int Precio_Dolar { get; set; }
         
         //Un constructor para poder crear objetos
         public EditarAdeudo() { }
 
         //Con este constructor asiganmos todos los campos a la clase.
-        public EditarAdeudo(string pFecha, string pNombre_Doctor, string pDireccion, string pTelefono, string pIdDoctor, string pCelular, string pColonia, string pZona, string pNombre_Paciente, string pDescripcion, int pAdeudo, string pEmpresa, string pIdIngreso)
+        public EditarAdeudo(string pFecha, string pNombre_Doctor, string pDireccion, string pTelefono, string pIdDoctor, string pCelular, string pColonia, string pZona, string pNombre_Paciente, string pDescripcion, int pAdeudo, string pEmpresa, string pIdIngreso, int pPesos, int pDolar)
         {
             this.Fecha = pFecha;
             this.Nombre_Doctor = pNombre_Doctor;
@@ -41,6 +43,8 @@ namespace Empresa
             this.Adeudo = pAdeudo;
             this.Empresa = pEmpresa;
             this.idIngreso = pIdIngreso;
+            this.Precio_Pesos = pPesos;
+            this.Precio_Dolar = pDolar;
         }
     }
 }
