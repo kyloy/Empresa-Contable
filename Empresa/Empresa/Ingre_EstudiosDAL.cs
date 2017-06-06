@@ -225,7 +225,7 @@ namespace Empresa
             try
             {
                 MySqlCommand _comando = new MySqlCommand(String.Format(
-               "SELECT  ingreso_estudios.idingreso_estudios, ingreso_estudios.Nombre_Paciente, ingreso_estudios.id_Doctor, ingreso_estudios.id_Estudio, date_format(`Fecha`,'%m-%d-%Y'), ingreso_estudios.Precio_Pesos, ingreso_estudios.Precio_Dolar, concat_ws(' ', doctores.Nombre, doctores.Apellido_paterno, doctores.Apellido_materno) as Nombre_Doctor, ingreso_estudios.Descripcion, ingreso_estudios.Adeudo, ingreso_estudios.Empresa FROM ingreso_estudios LEFT JOIN doctores ON ingreso_estudios.id_Doctor = doctores.idDoctor LEFT JOIN estudios on ingreso_estudios.id_Estudio = estudios.idEstudios WHERE ingreso_estudios.Empresa ='{0}' AND date_format(`Fecha`,'%Y') >= '{1}' and date_format(`Fecha`,'%m-%d') >= '{2}' ORDER BY ingreso_estudios.Fecha", Empresa, year, month), conexion);
+               "SELECT  ingreso_estudios.idingreso_estudios, ingreso_estudios.Nombre_Paciente, ingreso_estudios.id_Doctor, ingreso_estudios.id_Estudio, ingreso_estudios.Fecha, ingreso_estudios.Precio_Pesos, ingreso_estudios.Precio_Dolar, concat_ws(' ', doctores.Nombre, doctores.Apellido_paterno, doctores.Apellido_materno) as Nombre_Doctor, ingreso_estudios.Descripcion, ingreso_estudios.Adeudo, ingreso_estudios.Empresa FROM ingreso_estudios LEFT JOIN doctores ON ingreso_estudios.id_Doctor = doctores.idDoctor LEFT JOIN estudios on ingreso_estudios.id_Estudio = estudios.idEstudios WHERE ingreso_estudios.Empresa ='{0}' AND Fecha >= '{1}-{2}'  ORDER BY ingreso_estudios.Fecha", Empresa, year, month), conexion);
                 MySqlDataReader _reader = _comando.ExecuteReader();
                 while (_reader.Read())
                 {

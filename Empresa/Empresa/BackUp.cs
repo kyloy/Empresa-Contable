@@ -27,6 +27,17 @@ namespace Empresa
                 file.WriteLine(historia);
             }
         }
+        /*
+        public void HistorialImport(string historia)
+        {
+            using (System.IO.StreamWriter file =
+            new System.IO.StreamWriter(@"C:\Backup\importBackup.txt", true))
+            {
+                file.WriteLine(DateTime.Now.ToString());
+                file.WriteLine(historia);
+            }
+        }
+        */
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
@@ -77,36 +88,45 @@ namespace Empresa
         private void btnImportar_Click(object sender, EventArgs e)
         {
             string[] Backup;
+            string ruta;
             switch (comboBox1.Text)
             {
                 case "D:":
                     Backup = System.IO.File.ReadAllLines(@"D:\Backup\EmpresaBackup.txt");
+                    ruta = @"D:\Backup\EmpresaBackup.txt";
                     break;
                 case "E:":
                     Backup = System.IO.File.ReadAllLines(@"E:\Backup\EmpresaBackup.txt");
+                    ruta = @"E:\Backup\EmpresaBackup.txt";
                     break;
                 case "F:":
                     Backup = System.IO.File.ReadAllLines(@"F:\Backup\EmpresaBackup.txt");
+                    ruta = @"F:\Backup\EmpresaBackup.txt";
                     break;
                 case "G:":
                     Backup = System.IO.File.ReadAllLines(@"G:\Backup\EmpresaBackup.txt");
+                    ruta = @"G:\Backup\EmpresaBackup.txt";
                     break;
                 case "H:":
                     Backup = System.IO.File.ReadAllLines(@"H:\Backup\EmpresaBackup.txt");
+                    ruta = @"H:\Backup\EmpresaBackup.txt";
                     break;
                 default:
                     MessageBox.Show("Selecione una opcion correcta");
                     Backup = System.IO.File.ReadAllLines(@"D:\Backup\EmpresaBackup.txt");
+                    ruta = @"D:\Backup\EmpresaBackup.txt";
                     break;
             }            
             int retorno = 0;
-           
+            int contador = -1;
             try
             {
                foreach (string line in Backup)
                 {
+                    contador++;
                     if (line != "")
                     {
+                        
                         // Set cursor as hourglass
                         Cursor.Current = Cursors.WaitCursor;
                         MySqlConnection conexion = BdComun.ObtenerConexion();
@@ -115,12 +135,27 @@ namespace Empresa
                         conexion.Close();
                     }    
                 }
+               //MessageBox.Show(contador.ToString());
                 // Set cursor as default arrow
                 Cursor.Current = Cursors.Default;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);               
+            }
+            finally
+            {
+              /*#region Guardar datos en backup
+                System.IO.File.WriteAllText(ruta, "USE empresa;\n\r");
+                for (int i = contador; i <= Backup.Length-1; i++)
+                {
+                    using (System.IO.StreamWriter file =
+               new System.IO.StreamWriter(ruta, true))
+                    {
+                        file.WriteLine(Backup[i]);
+                    }
+                }
+                #endregion*/
             }
             if (retorno > 0)
                 MessageBox.Show("BASE DE DATOS ACTUALIZADA");

@@ -825,22 +825,22 @@ namespace Empresa
                 {
                     if (dtpFiltro1.Value.Day > 9)
                     {
-                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), dtpFiltro1.Value.Month.ToString() + "-" + dtpFiltro1.Value.Day.ToString());
+                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), dtpFiltro1.Value.Month.ToString() + "/" + dtpFiltro1.Value.Day.ToString());
                     }
                     else
                     {
-                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), dtpFiltro1.Value.Month.ToString() + "-" + "0" + dtpFiltro1.Value.Day.ToString());
+                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), dtpFiltro1.Value.Month.ToString() + "/" + "0" + dtpFiltro1.Value.Day.ToString());
                     }
                 }
                 else
                 {
                     if (dtpFiltro1.Value.Day > 9)
                     {
-                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), "0" + dtpFiltro1.Value.Month.ToString() + "-" + dtpFiltro1.Value.Day.ToString());
+                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), "0" + dtpFiltro1.Value.Month.ToString() + "/" + dtpFiltro1.Value.Day.ToString());
                     }
                     else
                     {
-                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), "0" + dtpFiltro1.Value.Month.ToString() + "-" + "0" + dtpFiltro1.Value.Day.ToString());
+                        dgvIngreso_Paciente.DataSource = Ingre_EstudiosDAL.LLenarFiltro(NombreEmpresa, dtpFiltro1.Value.Year.ToString(), "0" + dtpFiltro1.Value.Month.ToString() + "/" + "0" + dtpFiltro1.Value.Day.ToString());
                     }
                 }
                 dgvIngreso_Paciente.CurrentCell = dgvIngreso_Paciente.Rows[0].Cells[0];
